@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { BsDropdownModule, BsDropdownConfig } from 'ngx-bootstrap/dropdown';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { MoneyEarningOptionsComponent } from './components/money-earning-options/money-earning-options.component';
 import { BoltServicesComponent } from './components/bolt-services/bolt-services.component';
@@ -14,14 +15,26 @@ import { AppDownloadSectionComponent } from './components/app-download-section/a
 import { FooterComponent } from './components/footer/footer.component';
 import { NavigationSectionComponent } from './components/navigation-section/navigation-section.component';
 @NgModule({
-  declarations: [AppComponent, HeroSectionComponent, MoneyEarningOptionsComponent, BoltServicesComponent, CitiesForPeopleComponent, AboutComponent, NewsAndUpdatesComponent, AppDownloadSectionComponent, FooterComponent, NavigationSectionComponent],
+  declarations: [
+    AppComponent,
+    HeroSectionComponent,
+    MoneyEarningOptionsComponent,
+    BoltServicesComponent,
+    CitiesForPeopleComponent,
+    AboutComponent,
+    NewsAndUpdatesComponent,
+    AppDownloadSectionComponent,
+    FooterComponent,
+    NavigationSectionComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    BsDropdownModule,
   ],
-  providers: [],
+  providers: [BsDropdownConfig],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

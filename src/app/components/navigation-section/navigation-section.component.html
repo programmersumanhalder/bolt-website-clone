@@ -1,62 +1,217 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand"
-           href="#">Navbar</a>
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse"
-             id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active"
-                       aria-current="page"
-                       href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"
-                       href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"
-                       href="#"
-                       id="navbarDropdown"
-                       role="button"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu"
-                        aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item"
-                               href="#">Action</a></li>
-                        <li><a class="dropdown-item"
-                               href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item"
-                               href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2"
-                       type="search"
-                       placeholder="Search"
-                       aria-label="Search">
-                <button class="btn btn-outline-success"
-                        type="submit">Search</button>
-            </form>
-        </div>
+<nav class="navbar d-flex flex-column">
+  <div class="container  navbar-expand-lg navbar-light bg-light mx-auto ">
+    <img src="../../../assets/images/svg.png"
+         alt=""> <span>English</span>
+
+    <div class="collapse navbar-collapse "
+         id="navbarSupportedContent">
+      <span>Partner with Bolt as a:
+      </span>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link"
+             aria-current="page"
+             href="#">Driver</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             href="#">Fleet partner</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             href="#">Courier</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             href="#">Restaurant or Store</a>
+        </li>
+      </ul>
+
     </div>
+  </div>
+  <div class="container  navbar-expand-lg navbar-light  ">
+    <img src="../../../assets/images/logo.png"
+         alt=""> <span>English</span>
+
+    <div class="btn-group"
+         dropdown
+         #dropdown="bs-dropdown"
+         [autoClose]="false">
+      <button id="button-basic"
+              dropdownToggle
+              type="button"
+              class="btn  dropdown-toggle"
+              aria-controls="dropdown-basic">
+        Products<span class="caret"></span>
+      </button>
+      <ul id="dropdown-basic"
+          *dropdownMenu
+          class="dropdown-menu"
+          role="menu"
+          aria-labelledby="button-basic">
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">
+            <h2>Rides</h2>
+            <p>Request a ride in minutes</p>
+          </a></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">
+            <h2>Scooters</h2>
+            <p>2-wheel ride rental
+              at your fingertips</p>
+
+          </a></li>
+
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">
+
+            <h2>Car-sharing</h2>
+            <p>Top-quality car
+              rental at affordable prices</p>
+
+          </a>
+        </li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">
+            <h2>Food delivery</h2>
+            <p>Your favourite food,
+              delivered fast</p>
+
+          </a>
+        </li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">
+
+            <h2>Grocery delivery</h2>
+
+            <p>All the essentials,
+              at your door in 15-minutes</p>
+
+          </a></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">
+            <h2>Business</h2>
+            <p>Manage business
+              travel for your team and clients</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="btn-group"
+         dropdown
+         #dropdown="bs-dropdown"
+         [autoClose]="false">
+      <button id="button-basic"
+              dropdownToggle
+              type="button"
+              class="btn  dropdown-toggle"
+              aria-controls="dropdown-basic">
+        Partner with Bolt<span class="caret"></span>
+      </button>
+      <ul id="dropdown-basic"
+          *dropdownMenu
+          class="dropdown-menu"
+          role="menu"
+          aria-labelledby="button-basic">
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">File</a></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">Edit</a></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">Search</a></li>
+        <li class="divider dropdown-divider"></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">Recents</a>
+        </li>
+      </ul>
+    </div>
+    <div class="btn-group"
+         dropdown
+         #dropdown="bs-dropdown"
+         [autoClose]="false">
+      <button id="button-basic"
+              dropdownToggle
+              type="button"
+              class="btn  dropdown-toggle"
+              aria-controls="dropdown-basic">
+        Company<span class="caret"></span>
+      </button>
+      <ul id="dropdown-basic"
+          *dropdownMenu
+          class="dropdown-menu"
+          role="menu"
+          aria-labelledby="button-basic">
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">File</a></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">Edit</a></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">Search</a></li>
+        <li class="divider dropdown-divider"></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">Recents</a>
+        </li>
+      </ul>
+    </div>
+    <a class="nav-link"
+       aria-current="page"
+       href="#">Support</a>
+
+    <div class="btn-group"
+         dropdown
+         #dropdown="bs-dropdown"
+         [autoClose]="false">
+      <button id="button-basic"
+              dropdownToggle
+              type="button"
+              class="btn  dropdown-toggle"
+              aria-controls="dropdown-basic">
+        Safety<span class="caret"></span>
+      </button>
+      <ul id="dropdown-basic"
+          *dropdownMenu
+          class="dropdown-menu"
+          role="menu"
+          aria-labelledby="button-basic">
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">File</a></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">Edit</a></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">Search</a></li>
+        <li class="divider dropdown-divider"></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">Recents</a>
+        </li>
+      </ul>
+    </div>
+    <div class="btn-group"
+         dropdown
+         #dropdown="bs-dropdown"
+         [autoClose]="false">
+      <button id="button-basic"
+              dropdownToggle
+              type="button"
+              class="btn  dropdown-toggle"
+              aria-controls="dropdown-basic">
+        Cities<span class="caret"></span>
+      </button>
+      <ul id="dropdown-basic"
+          *dropdownMenu
+          class="dropdown-menu"
+          role="menu"
+          aria-labelledby="button-basic">
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">File</a></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">Edit</a></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">Search</a></li>
+        <li class="divider dropdown-divider"></li>
+        <li role="menuitem"><a class="dropdown-item"
+             href="#">Recents</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
